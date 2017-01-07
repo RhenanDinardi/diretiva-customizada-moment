@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fórum Especialidades Front-End - Moment</title>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+				
+		<script src="vendor/angular/angular.min.js"></script>	
+		
+		<script src="js/libs/moment/moment.js"></script>
+		<script src="js/libs/moment/locale/pt-br.js"></script>
+		
+		<script src="js/app.js"></script>
+		<script src="js/filter/filters.js"></script>
+		<script src="js/filter/moment.js"></script>
+		<script src="js/controllers/moment.controller.js"></script>
+    </head>
+    <body ng-app="AngularStructure" ng-controller="MomentController" ng-cloak>
+        		
+        <div>	
+			<p>{{date}}</p>
+			
+			<p>{{formatedDate}}</p>
+			
+			<p>{{formatedDate2}}</p>
+			
+			<p>{{formatedDate3}}</p>
+			
+			<p>{{date | moment}}</p>
+		</div>
+
+    </body>
+</html>
